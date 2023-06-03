@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <a href="https://www.flaticon.es/iconos-gratis/kit-de-maquillaje" title="kit-de-maquillaje iconos"></a>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Desafío 1: Calculando el total</title>
+    <link rel="icon" type="image/png" href="/assets/img/estrellas.png">
+</head>
+
+<body>
+    <main>
+        <div class="Contenido">
+            <div class="card">
+                <div class="Producto">
+                    <img class="imagen" src="./assets/img/maletam.jpg">
+                    <h3>Maleta para maquillaje profesional</h3>
+                </div>
+                <div class="Compra">
+                    <input id="cantidad" type="number" placeholder="Cantidad">
+                    <label for="colorInput" placeholder="Color">Color:</label>
+                    <input type="color" id="colorInput", id="colordiv">
+                    <h4>Precio: <span id="total">500000</span></h4>
+                </div>
+                <div id="total">
+                    <button onclick="validarCampos(); cambiarColor(); resultadoFinal();" id="btnTotal">Calcular Total</button>
+                </div>
+                <div id="reiniciar">
+                    <button onclick="reiniciarPrograma()" id="btnreinicio">Reinicio</button>
+                </div>
+            </div>
+            <div id="InfoLateral" class="InfoCompra">
+                <p id="totalParrafo">Total: 0</p>
+                <p id="cantidadParrafo">Cantidad: 0</p>
+                <p>Color: <span id="ColorInfo"><div id="circle"></div></span></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="/assets/js/operacion.js"></script>
+</body>
+
+</html>
